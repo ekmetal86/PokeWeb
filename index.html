@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pokémon Evolution - Interactive Pokémon evolution simulator">
+    <meta name="theme-color" content="#1e3b70">
+    <title>Pokémon Evolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Evolution</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar Pokémon..." aria-label="Search Pokémon">
+            <div id="searchResults" class="search-results" role="listbox" aria-label="Search results"></div>
+        </div>
+        <div class="pokemon-container" id="pokemonContainer" role="main"></div>
+        <div class="pokeball" id="pokeball" role="button" aria-label="Drag pokeball to evolve Pokémon">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokeball" draggable="false">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
